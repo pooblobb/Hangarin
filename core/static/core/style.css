@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+li {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+strong {
+    color: #2c3e50;
+    font-size: 1.2em;
+}
+
+.status {
+    font-weight: bold;
+    color: #e67e22; /* Orange for Pending/In Progress */
+}
+
+.status.completed {
+    color: #27ae60; /* Green for Completed */
+}

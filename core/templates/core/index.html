@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangarin Homepage</title>
+    <link rel="stylesheet" href="{% static 'core/style.css' %}">
+</head>
+<body>
+    <h1>Task List</h1>
+    
+    <div style="text-align: center; margin-bottom: 20px;">
+        <a href="?">All</a> |
+        <a href="?status=Pending">Pending</a> |
+        <a href="?status=In Progress">In Progress</a> |
+        <a href="?status=Completed">Completed</a>
+    </div>
+    
+    <ul>
+        {% for task in tasks %}
+            <li>
+                <strong>{{ task.title }}</strong><br>
+                Status: <span class="status">{{ task.status }}</span> | 
+                Deadline: {{ task.deadline }}
+            </li>
+        {% empty %}
+            <li>No tasks found for this status.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
