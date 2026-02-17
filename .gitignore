@@ -1,0 +1,16 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+hangvenv/
+
+# Database
+db.sqlite3
+
+# Environment variables
+.env
+
+# IDE settings
+.vscode/
+.idea/
